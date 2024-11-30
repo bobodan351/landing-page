@@ -12,30 +12,65 @@
         <div class="container">
             <div class="logo">
                 <a href="#"><img src="nature.jfif" alt="a nature picture " style="
-                    border-radius: 50px; width: 75px;height: 75px;"> </a><h2>NAT<span>RESERVE</span></h2>
+                    border-radius: 50px; width: 75px;height: 75px;"> </a><h2 title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">NAT<span>RESERVE</span><button onclick="myfunction()">CLICK ON ME</button></h2>
             </div>
+             <div class="search-container">
+        <label for="search-field">
+            <input type="search" class="search-bar" id="search-field" placeholder="search.....">
+        </label>
+    </div>
+             <div class="dropdown">
+        <button class="dropbtn" style="background-color: rgb(246, 177, 177);"><img src="hamburger.png" alt="" style="
+                    border-radius: px; width: 60px;height: 60px;"></button>
+        <div class="dropdown-content">
             <nav class="nav">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">What We Do</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#news">News & Insights</a>
-                <a href="#careers">Careers</a>
-                <a href="#contact">Contact Us</a>
+                <a href="#home" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">home</a>
+                <a href="#about" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">About Us</a>
+                <a href="#services" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">What We Do</a>
+                <a href="#gallery" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">Gallery</a>
+                <a href="#news" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">News & Insights</a>
+                <a href="#careers" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">Careers</a>
+                <a href="#contact" title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fuga.">Contact Us</a>
             </nav>
         </div>
+        </div>
+    </div>
     </header>
     <main class="main">
-        <div class="contains">
-            <div class="imgleft">
-                  
-            </div>
-            <div class="wordright">
-                
-            </div>
-        </div>
-        
+       
+
     </main>
+     <div class="contain">
+        <div class="button-border">
+            <button class="button" type="button">start coding</button>
+        
+        </div>
+    </div>
+    <div class="loading-container">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+    </div>
+   
+  <div class="loading-container" id="demo">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div> 
+  <div style="position: absolute; top: 50%;">
+    
+  </div>
+  <script>
+    var t=5,r=6, v=r%t,hour = new Date().getHours()
+    function myfunction() {
+        if (hour > 17){
+            document.getElementById('demo').innerHTML = v;
+        }
+        else{
+            document.getElementById('demo').style.color = 'yellow'
+        }
+    }
+   
+  </script>
 </body>
 </html>
-
